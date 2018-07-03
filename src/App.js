@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 // import picture from './2.jpg';
 import img3 from './img_folder/3.jpg';
 import img4 from './img_folder/4.jpg';
 import img5 from './img_folder/5.jpg';
-import img6 from './img_folder/6.jpeg';
+import img6 from './img_folder/6.jpg';
 import img7 from './img_folder/7.jpg';
-import img8 from './img_folder/8.jpeg';
+import img8 from './img_folder/8.jpg';
 
 class App extends Component {
   render() {
@@ -15,18 +14,18 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           
-          <h1 className="App-title">Welcome to kodeflix</h1>
+          <h1 className="App-title">Welcome to Cristian KODFLIX</h1>
         </header>
         <div className="container"> 
-          <img src={img3} className= "" alt="Black Mirror"/>
-          <img src={img4} className= "" alt="Breaking Bad"/>
-          <img src={img5} className= "" alt="Death Note"/>
+          <div className="item"><img src={img3} className= "image" alt="Black Mirror"/></div>
+          <div className="item"><img src={img4} className= "image" alt="Breaking Bad"/></div>
+          <div className="item"><img src={img5} className= "image" alt="Death Note"/></div>
         </div>
 
         <div className="container">
-          <img src={img6} className= "" alt="Games of Thrones"/>
-          <img src={img7} className= "" alt="The Walking Dead"/>
-          <img src={img8} className= "" alt="The Wire"/>
+        <div className="item"><img src={img6} className= "image" alt="Games of Thrones"/></div>
+        <div className="item"><img src={img7} className= "image" alt="The Walking Dead"/></div>
+        <div className="item"><img src={img8} className= "image" alt="The Wire"/></div>
         </div>
 
         <p className="App-intro">
