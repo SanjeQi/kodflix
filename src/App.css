@@ -29,15 +29,16 @@
 
 .image { 
   width: 100%;
-}
-
-  .container {
+  }
+ 
+.container {
     display: flex;
     justify-content: space-around;}
 
-  .item {
+.item {
     flex-grow: 1;
     margin: auto;
+    position: relative;
   }
   @media only screen and (max-width: 600px) {
     .container { display: block}
@@ -45,4 +46,20 @@
         background-color: rgb(0, 5, 7);
                       }
   }
+.movieTitle { 
+  position: absolute;
+  height: 0; 
+  bottom: 0;
+  opacity: 0;
+   background:black;
+   width: 100%;
+   color:white;
+   text-align: center;
+   z-index: 1;
+   /* transition:  height 0.8s, opacity 1s; */
+ }
+.item:hover .movieTitle{
+  height: 10%;
+  opacity: 1;
+}
 
