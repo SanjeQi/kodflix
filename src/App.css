@@ -46,7 +46,7 @@
         background-color: rgb(0, 5, 7);
                       }
   }
-.movieTitle { 
+ .movieTitle { 
   position: absolute;
    height: 0; 
    bottom: 0;
@@ -57,7 +57,7 @@
    text-align: center;
    z-index: 1;
    transition:  height 0.5s, opacity 1s;
- }
+ } 
 .item:hover .movieTitle{
   height: 10%;
   opacity: 1;
