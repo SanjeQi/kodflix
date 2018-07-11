@@ -13,15 +13,15 @@ export default function Gallery() {
     return (
         <div>
             <div className="container">
-                <Cover img={img3} title="Black Mirror" movie_url="Black Mirror" />
-                <Cover img={img4} title="Breaking Bad"/>
-                <Cover img={img5} title="Death Note "/>
+                <Cover img={img3} title="Black Mirror" id="black_mirror" />
+                <Cover img={img4} title="Breaking Bad"id="breaking_bad"/>
+                <Cover img={img5} title="Death Note "id="death_note"/>
             </div>
 
             <div className="container">
-                <Cover img={img6} title="Games of Thrones"/>
-                <Cover img={img7} title="The Walking Dead"/>
-                <Cover img={img8} title="The Wire"/>
+                <Cover img={img6} title="Games of Thrones" id="games_of_thrones"/>
+                <Cover img={img7} title="The Walking Dead" id="the_walking_dead"/>
+                <Cover img={img8} title="The Wire" id="the_wire"/>
             </div>
             
         </div>
