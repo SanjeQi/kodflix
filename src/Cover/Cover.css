@@ -1,0 +1,27 @@
+.item {
+    flex-grow: 1;
+    margin: auto;
+    position: relative;
+  }
+
+.item:hover .movieTitle {
+    height: 59px;
+    opacity: 0.95;
+  } 
+
+.movieTitle { 
+    position: absolute;
+     height: 8px; 
+     bottom: 4px;
+     opacity: 0;
+   background:black;
+    width: 100%;
+    color:white;
+    text-align: center;
+    z-index: 1;
+    transition:  height 0.5s, opacity 1s;
+  } 
+
+.image { 
+    width: 100%;
+      } 
