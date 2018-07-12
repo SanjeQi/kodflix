@@ -9,7 +9,7 @@ export default function Gallery() {
             {
                 getGallery().map(cover => {
                     return (
-                        <Cover img={cover.img} title={cover.title} id={cover.id} key={cover.id} />
+                        <Cover image={cover.img} title={cover.title} id={cover.id} />
                     );
                 })
             }
