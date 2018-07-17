@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route } from "react-router-dom";
-import Details from './Details/Details.js';
-import Gallery from './Gallery/Gallery.js';
+import Details from './Details/Details';
+import Gallery from './Gallery/Gallery';
 
 class App extends Component {
   render() {

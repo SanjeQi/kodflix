@@ -5,8 +5,10 @@ import img6 from '../img_folder/6.jpg';
 import img7 from '../img_folder/7.jpg';
 import img8 from '../img_folder/8.jpg';
 
-//Create a function that returns an array of objects
-export default function getGallery() {
+//Create a function that returns change an array of objects
+
+// rename get-Galerry to getShows - that has the getShows function instead of get-Gallery
+export default function getShows() {
     return [
         { image: img3, title: 'Black Mirror', id: 'black_mirror' },
         { image: img4, title: 'Breaking Bad', id: 'breaking_bad' },

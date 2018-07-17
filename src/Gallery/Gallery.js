@@ -1,15 +1,15 @@
 import React from 'react';
-import Cover from '../Cover/Cover.js';
+import Cover from '../Cover/Cover';
 import "./Gallery.css";
-import getGallery from './getGallery.js';
+import getShows from './getShows.js';
 
 export default function Gallery() {
     return (
         <div className="container">
             {
-                getGallery().map(cover => {
+                getShows().map(getShows => {
                     return (
-                        <Cover img={cover.image} title={cover.title} id={cover.id} />
+                        <Cover img={getShows.image} title={getShows.title} id={getShows.id} />
                     );
                 })
             }
