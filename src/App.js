@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Details from './Details/Details';
 import Gallery from './Gallery/Gallery';
+import NotFound from './NotFound/NotFound.js'
 
 class App extends Component {
   render() {
     return (
-
       <div className="App">
-        <BrowserRouter>
-          <div>
+        <Router>
+          <Switch>
             <Route exact path="/" component={Gallery} />
+            <Route path='/not-found' component={NotFound} />
             <Route path='/:details' component={Details} />
-          </div>
-        </BrowserRouter>
+          </Switch>
+        </Router>
       </div>
     );
   }
