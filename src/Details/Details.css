@@ -1,9 +1,90 @@
-
+/* 
 .details {
-    background-color: rgb(12, 9, 9);
+    background-color:inherit;
     color:white;
-    text-align: center;
+    text-align: left;
 }
 
+.details h1 {
+    text-align: left;
+}
 
+.details-content {
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+.details-content-synopsis {
+    padding-right: 0px;
+    flex: 1;
+    padding: 40px 10px 40px 15px;
+}
+
+.details-content-cover{
+    border: 5px solid rgba(109, 110, 107, 0.15);
+    height: 350px;
+    position: relative;
+    margin: 1px;
+}
+
+.details-content-cover img {
+    max-width: 350px;
+    flex:7;
+    height: 100%;
+    
+}
+@media screen and (max-width: 500px) {
+    .details-content {
+       display: block;
+   }
+    .details-content-cover img {
+       max-width: 100%;
+   }
+} 
+ */
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.left {
+    text-align: left;
+    left: 0;
+    flex:2;
+}
+
+.h1_title {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 17%;
+    color: rgb(255, 255, 255);
+    
+}
+
+.details-content-cover img {
+    width: 100%;
+    height: 100%;
+    
+}
+.details-content-cover {
+    margin: 30px;
+    flex:1;
+}
+
+.details-content-synopsis {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+ @media screen and (max-width: 500px) {
+    .details {
+        display: block;
+    
+    }
+     .details-content-cover img {
+        max-width: 100%;
+    }
+} 

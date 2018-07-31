@@ -1,7 +1,13 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
+body {
+  background-color: #070b15;
+  color: rgb(220, 215, 215);
+  min-height: 100%;
+  margin: 0;
+}
 
 
 

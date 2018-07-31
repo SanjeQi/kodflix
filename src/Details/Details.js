@@ -11,11 +11,9 @@ export default class Details extends React.Component {
   }
 
   componentDidMount() {
-
-    
     this.setState({
       show: getShows()
-        .find(single_show => single_show.id === this.props.match.params.details)
+        .find(single_show => single_show.id === this.props.match.params.showId)
     });
   }
 
@@ -23,8 +21,19 @@ export default class Details extends React.Component {
     return (
       this.state.show ?
         <div className='details'>
-          <h1>{this.state.show.title}</h1>
-        </div>:
+
+          <div className='left'>
+            <div className='h1_title'>
+              <h1>{this.state.show.title}</h1>
+            </div>
+            <h3 className='details-content-synopsis'>
+              {this.state.show.synopsis}
+            </h3>
+          </div>
+          <div className='details-content-cover' >
+            <img src={this.state.show.image} alt='' />
+          </div>
+        </div> :
         <Redirect to='/not-found' />
     )
   }
