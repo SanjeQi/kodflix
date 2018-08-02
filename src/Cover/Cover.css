@@ -2,12 +2,16 @@
     flex-grow: 1;
     margin: auto;
     position: relative;
-  }
+}
 
 .item:hover .movieTitle {
     height: 59px;
     opacity: 0.95;
   } 
+  .item img {
+    height: 100%;
+    width: 100%;
+  }
 
 .movieTitle { 
     position: absolute;
@@ -24,4 +28,5 @@
 
 .image { 
     width: 100%;
+    height: 100%;
       } 
